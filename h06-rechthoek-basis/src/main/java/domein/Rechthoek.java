@@ -55,10 +55,8 @@ public class Rechthoek {
 		positie.verplaats(richting, verschuiving);
 	}
 
-	// tag::wijzigParameters[]
 	// Deze methode is enkel ter demonstratie maar maakt verder geen deel uit
 	// van het ontwerp van deze klasse.
-	// tag::wijzigParameters2[]
 	// parBreedte & parLengte zijn van het primitief type double,
 	// parCoordinaat is een referentie naar een Coordinaat object
 	public void wijzigParameters(double parLengte, double parBreedte, Coordinaat parCoordinaat) {
@@ -68,8 +66,6 @@ public class Rechthoek {
 		parCoordinaat.verplaats("rechts", 97);
 	}
 
-	// end::wijzigParameters2[]
-	// end::wijzigParameters[]
 	@Override
 	public String toString() {
 		return String.format("Rechthoek van %.2f op %.2f op coordinaat (%d, %d).", lengte, breedte, positie.getX(),

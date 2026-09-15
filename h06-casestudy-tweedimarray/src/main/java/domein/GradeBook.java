@@ -17,7 +17,6 @@ public class GradeBook {
 		this.courseName = courseName;
 	}
 
-	// tag::searchMinimum[]
 	// het slechtste examen zoeken
 	public int searchMinimum() {
 		// <.>
@@ -40,9 +39,7 @@ public class GradeBook {
 		}
 		return lowGrade; // geeft het slechtste examen terug
 	}// einde methode minimum
-		// end::searchMinimum[]
 
-	// tag::searchMaximum[]
 	// het beste examen zoeken
 	public int searchMaximum() {
 		// initialisatie: eerste element is het beste examen
@@ -62,9 +59,7 @@ public class GradeBook {
 		}
 		return highGrade; // geeft het beste examen terug
 	}// einde methode maximum
-		// end::searchMaximum[]
 
-	// tag::calculateAverage[]
 	// <.>
 	// de gemiddelde punten van een student bepalen
 	public double calculateAverage(int setOfGrades[]) {
@@ -78,9 +73,7 @@ public class GradeBook {
 		// geeft de gemiddelde punten terug
 		return (double) total / setOfGrades.length;
 	}
-	// end::calculateAverage[]
 
-	// tag::buildOutput[]
 	// output string opvullen
 	public String buildOutput() {
 		String output = buildOutputGrades(); // <.>
@@ -91,9 +84,7 @@ public class GradeBook {
 		output += buildOutputBarChart(); // <.>
 		return output;
 	} // einde methode buildOutput
-		// end::buildOutput[]
 
-	// tag::buildOutputGrades[]
 	// output the contents of the grades array
 	public String buildOutputGrades() {
 		String output = "The grades are:%n%n";
@@ -126,9 +117,7 @@ public class GradeBook {
 		}
 		return output;
 	}
-	// end::buildOutputGrades[]
 
-	// tag::buildOutputBarChart[]
 	public String buildOutputBarChart() {
 		String output = "Overall grade distribution:";
 
@@ -159,5 +148,4 @@ public class GradeBook {
 		}
 		return output;
 	}
-	// end::buildOutputBarChart[]
 }

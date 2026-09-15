@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.text.NumberFormat;
 
 public class Interest {
-	// tag::main[]
 	public static void main(String[] args) {
 		
 		new Interest().berekenIntrest();
@@ -23,5 +22,4 @@ public class Interest {
 		}
 		
 	}
-	// end::main[]
 }

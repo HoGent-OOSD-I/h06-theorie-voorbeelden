@@ -1,4 +1,3 @@
-// tag::alles[]
 package domein;
 
 public class Coordinaat {
@@ -26,7 +25,6 @@ public class Coordinaat {
 		this.y = y;
 	}
 
-	// tag::overload[]
 	public void verplaats(String richting) {
 		verplaats(richting, 1);
 	}
@@ -39,7 +37,6 @@ public class Coordinaat {
 		case "rechts" -> x += verschuiving;
 		}
 	}
-	// end::overload[]
 	
 	public void wisselXenY() {
 		int temp = x;
@@ -53,4 +50,3 @@ public class Coordinaat {
 	}
 
 }
-// end::alles[]

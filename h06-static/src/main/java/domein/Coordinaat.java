@@ -9,7 +9,6 @@ public class Coordinaat {
 		setY(y);
 	}
 
-	// tag::overload[]
 	public void verplaats(String richting) {
 		verplaats(richting, 1);
 	}
@@ -22,7 +21,6 @@ public class Coordinaat {
 		case "rechts" -> x += verschuiving;
 		}
 	}
-	// end::overload[]
 
 	public int getX() {
 		return x;

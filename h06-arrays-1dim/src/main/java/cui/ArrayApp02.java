@@ -1,7 +1,6 @@
 package cui;
 
 public class ArrayApp02 {
-	// tag::main[]
 	public static void main(String[] args) {
 		int[] getallen = { 1, 2, 3, 4, 5 };
 
@@ -13,7 +12,6 @@ public class ArrayApp02 {
 	private static void wijzigReferentieDoorgegevenArray(int[] doorgegevenArray) {
 		doorgegevenArray = new int[100]; // <1>
 	}
-	// end::main[]
 
 	public static String geefAlsString(int[] doorgegevenArray) {
 		String resultaat = "[";

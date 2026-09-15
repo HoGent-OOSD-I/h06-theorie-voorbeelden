@@ -18,7 +18,6 @@ public class Coordinaat {
 		verplaats(richting, 1);
 	}
 
-	// tag::verplaats[]
 	public void verplaats(Richting richting, int verschuiving) {
 		switch (richting) { // <1>
 		case BOVEN -> setY(y + verschuiving);
@@ -27,7 +26,6 @@ public class Coordinaat {
 		case RECHTS -> setX(x + verschuiving);
 		}
 	}
-	// end::verplaats[]
 
 	public int getX() {
 		return x;

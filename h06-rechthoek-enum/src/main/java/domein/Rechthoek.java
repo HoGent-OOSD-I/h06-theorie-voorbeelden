@@ -59,11 +59,9 @@ public class Rechthoek {
 		positie.verplaats(Richting.valueOf(richting.toUpperCase()));
 	}
 
-	// tag::verplaats[]
 	public void verschuif(String richting, int verschuiving) {
 		positie.verplaats(Richting.valueOf(richting.toUpperCase()), verschuiving); // <1>
 	}
-	// end::verplaats[]
 
 	@Override
 	public String toString() {
